@@ -55,3 +55,20 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 fadeEls.forEach(el => fadeObserver.observe(el));
+
+// Skill bar animation
+const skillFills = document.querySelectorAll('.skill-fill');
+
+const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const fill = entry.target;
+            const width = fill.getAttribute('data-width');
+            fill.style.setProperty('--target-width', width + '%');
+            fill.classList.add('animate');
+            skillObserver.unobserve(fill);
+        }
+    });
+}, { threshold: 0.4 });
+
+skillFills.forEach(fill => skillObserver.observe(fill));
