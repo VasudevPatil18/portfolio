@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vasudev Patil — BCA student & MERN stack developer from Surat, Gujarat. Building responsive web apps with React, Node.js, Express & MongoDB. Open to internships.">
     <title>Vasudev Patil | MERN Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%237c3aed'/><text y='.9em' font-size='60' x='50%' text-anchor='middle' font-family='Inter,sans-serif' font-weight='800' fill='white'>VP</text></svg>">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -64,6 +66,10 @@
         <div class="about-bio fade-up">
             <p>I'm a <span class="bio-highlight">3rd-year BCA student</span> from Surat, Gujarat, passionate about building things for the web. I specialize in the <span class="bio-highlight">MERN stack</span> — crafting clean UIs with React and powering them with Node.js, Express, and MongoDB on the backend.</p>
             <p>What excites me most is turning ideas into real, working products — whether that's a slick frontend interaction or a well-structured REST API. I'm currently deepening my skills in full-stack architecture and actively looking for <span class="bio-highlight">software development internships</span> where I can contribute, learn fast, and grow alongside a great team.</p>
+            <div class="currently-learning">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Currently learning: <strong>TypeScript, Next.js & Docker</strong></span>
+            </div>
         </div>
         <div class="about-grid fade-up">
             <div class="about-card">
@@ -150,33 +156,103 @@
             <h2>Featured Projects</h2>
         </div>
         <div class="portfolio-grid fade-up">
-            <a href="https://vasudevpatil18.github.io/portfolio/" target="_blank" class="portfolio-card">
-                <div class="card-icon"><i class="fa-solid fa-user-tie"></i></div>
-                <div class="card-body">
+
+            <!-- Project 1 -->
+            <div class="portfolio-card">
+                <div class="card-preview" style="background: linear-gradient(135deg,#1a1d27,#2d1f5e);">
+                    <i class="fa-solid fa-user-tie card-preview-icon"></i>
+                </div>
+                <div class="card-content">
                     <span class="card-tag">HTML · CSS · JS</span>
                     <h3>Responsive Portfolio</h3>
                     <p>A clean, responsive personal portfolio showcasing projects and skills.</p>
+                    <div class="card-actions">
+                        <a href="https://vasudevpatil18.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/VasudevPatil18/portfolio" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-gh"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
-                <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-            </a>
-            <a href="https://interview-platform-iota-seven.vercel.app" target="_blank" class="portfolio-card">
-                <div class="card-icon"><i class="fa-solid fa-comments"></i></div>
-                <div class="card-body">
+            </div>
+
+            <!-- Project 2 -->
+            <div class="portfolio-card">
+                <div class="card-preview" style="background: linear-gradient(135deg,#1a1d27,#1f3a5e);">
+                    <i class="fa-solid fa-comments card-preview-icon"></i>
+                </div>
+                <div class="card-content">
                     <span class="card-tag">MERN Stack</span>
                     <h3>Interview Platform</h3>
-                    <p>A full-stack platform for conducting and managing technical interviews.</p>
+                    <p>A full-stack platform for conducting and managing technical interviews with real-time features.</p>
+                    <div class="card-actions">
+                        <a href="https://interview-platform-iota-seven.vercel.app" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                        <a href="https://github.com/VasudevPatil18" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-gh"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
                 </div>
-                <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-            </a>
-            <div class="portfolio-card wip">
-                <div class="card-icon"><i class="fa-solid fa-list-check"></i></div>
-                <div class="card-body">
-                    <span class="card-tag">Coming Soon</span>
-                    <h3>Jewellery Shop Management System</h3>
-                    <p>A productivity app for managing tasks, deadlines, and team collaboration.</p>
-                </div>
-                <div class="card-arrow"><i class="fa-solid fa-clock"></i></div>
             </div>
+
+            <!-- Project 3 -->
+            <div class="portfolio-card">
+                <div class="card-preview" style="background: linear-gradient(135deg,#1a1d27,#3a1f5e);">
+                    <i class="fa-solid fa-gem card-preview-icon"></i>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">MERN Stack</span>
+                    <h3>Jewellery Shop Management</h3>
+                    <p>A full-stack inventory & billing system for jewellery shops with product, order, and customer management.</p>
+                    <div class="card-actions">
+                        <span class="card-btn card-btn-wip"><i class="fa-solid fa-clock"></i> In Progress</span>
+                        <a href="https://github.com/VasudevPatil18" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-gh"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="portfolio-card">
+                <div class="card-preview" style="background: linear-gradient(135deg,#1a1d27,#1f5e3a);">
+                    <i class="fa-solid fa-list-check card-preview-icon"></i>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">React · Node · MongoDB</span>
+                    <h3>Task Manager App</h3>
+                    <p>A CRUD task management app with user authentication, priority labels, and deadline tracking.</p>
+                    <div class="card-actions">
+                        <span class="card-btn card-btn-wip"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+                        <a href="https://github.com/VasudevPatil18" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-gh"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="portfolio-card">
+                <div class="card-preview" style="background: linear-gradient(135deg,#1a1d27,#5e3a1f);">
+                    <i class="fa-solid fa-lock card-preview-icon"></i>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">Node · Express · JWT</span>
+                    <h3>Auth REST API</h3>
+                    <p>A secure REST API with JWT-based authentication, role-based access control, and bcrypt password hashing.</p>
+                    <div class="card-actions">
+                        <span class="card-btn card-btn-wip"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+                        <a href="https://github.com/VasudevPatil18" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-gh"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="portfolio-card">
+                <div class="card-preview" style="background: linear-gradient(135deg,#1a1d27,#5e1f3a);">
+                    <i class="fa-solid fa-cloud-sun card-preview-icon"></i>
+                </div>
+                <div class="card-content">
+                    <span class="card-tag">React · REST API</span>
+                    <h3>Weather Dashboard</h3>
+                    <p>A React app consuming the OpenWeatherMap API — search any city for live weather, forecasts, and humidity data.</p>
+                    <div class="card-actions">
+                        <span class="card-btn card-btn-wip"><i class="fa-solid fa-clock"></i> Coming Soon</span>
+                        <a href="https://github.com/VasudevPatil18" target="_blank" rel="noopener noreferrer" class="card-btn card-btn-gh"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -188,20 +264,34 @@
             <p>Open to internship opportunities and collaborations. Feel free to reach out.</p>
         </div>
         <div class="contact-links fade-up">
-            <a href="mailto:vasudevpatil@gmail.com" class="contact-card" target="_blank">
+            <div class="contact-card copy-email" data-email="vasudevpatil18@gmail.com" title="Click to copy email">
                 <i class="fa-solid fa-envelope"></i>
                 <span>Email</span>
-            </a>
-            <a href="https://github.com/VasudevPatil18" class="contact-card" target="_blank">
+                <small class="copy-hint">Click to copy</small>
+            </div>
+            <a href="https://github.com/VasudevPatil18" target="_blank" rel="noopener noreferrer" class="contact-card">
                 <i class="fa-brands fa-github"></i>
                 <span>GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/vasudev-patil-2807962b3/" class="contact-card" target="_blank">
+            <a href="https://www.linkedin.com/in/vasudev-patil-2807962b3/" target="_blank" rel="noopener noreferrer" class="contact-card">
                 <i class="fa-brands fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>Twitter / X</span>
+            </a>
         </div>
+        <div class="copy-toast" id="copyToast">Email copied!</div>
     </section>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
 
     <footer class="footer">
         <p>Designed & Built by Vasudev Patil &copy; 2025</p>

@@ -72,3 +72,41 @@ const skillObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 
 skillFills.forEach(fill => skillObserver.observe(fill));
+
+// Copy email
+const copyBtn = document.querySelector('.copy-email');
+const toast = document.getElementById('copyToast');
+
+if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+        const email = copyBtn.getAttribute('data-email');
+        navigator.clipboard.writeText(email).then(() => {
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        });
+    });
+}
+
+// Back to top
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('visible', window.scrollY > 400);
+});
+
+backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Cursor glow
+const cursorGlow = document.getElementById('cursorGlow');
+
+document.addEventListener('mousemove', (e) => {
+    cursorGlow.style.opacity = '1';
+    cursorGlow.style.left = e.clientX + 'px';
+    cursorGlow.style.top = e.clientY + 'px';
+});
+
+document.addEventListener('mouseleave', () => {
+    cursorGlow.style.opacity = '0';
+});
